@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<!-- 
+  Todo 
+  1. Breakpoint (responsive when screen is bigger)
+
+
+-->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/public/img/favicon.png" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Product preview card component</title>
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-cream h-full">
+    <div class="h-full">
+      <div class="md:py-56">
+        <div
+          class="w-[21.5rem] mx-auto mt-8 flex flex-col md:flex-row md:w-[42rem]"
+        >
+          <div class="md:hidden">
+            <img
+              class="rounded-t-lg"
+              src="../public/img/image-product-mobile.jpg"
+            />
+          </div>
+          <div class="md:flex sm:hidden xs:hidden xxs:hidden md:h-[29rem]">
+            <img
+              class="rounded-l-lg"
+              src="../public/img/image-product-desktop.jpg"
+            />
+          </div>
+          <div
+            class="bg-white h-[22.5rem] rounded-b-lg md:rounded-r-lg md:rounded-bl-none md:h-[29rem] md:w-[19.33rem]"
+          >
+            <div class="mx-6 pt-6">
+              <h3
+                class="uppercase font-body tracking-[0.45em] text-xs mb-3 md:mt-3 md:ml-3 md:mb-6"
+              >
+                Perfume
+              </h3>
+
+              <div class="md:w-[13rem] md:mb-6">
+                <h1
+                  class="font-title text-3xl mb-3 text-very-dark-blue md:ml-3"
+                >
+                  Gabrielle Essence Eau De Parfum
+                </h1>
+              </div>
+
+              <div class="w-[18rem]">
+                <p
+                  class="font-body text-sm leading-5 mb-5 md:ml-3 md:w-[14rem] md:mb-7"
+                >
+                  A floral, solar and voluptuous interpretation composed by
+                  Olivier Polge, Perfumer-Creator for the House of CHANEL.
+                </p>
+              </div>
+
+              <div class="flex flex-row gap-5 mb-5 md:mb-7">
+                <p class="font-title text-dark-cyan text-3xl md:ml-3">
+                  $149.99
+                </p>
+                <p class="flex line-through items-center text-sm md:ml-2.5">
+                  $169.99
+                </p>
+              </div>
+
+              <div class="">
+                <button
+                  href="#"
+                  class="flex bg-dark-cyan w-full py-3 rounded-lg justify-center gap-x-3 hover:bg-very-dark-cyan md:ml-3 md:w-[90%]"
+                >
+                  <img src="/public/img/icon-cart.svg" class="self-center" />
+                  <p class="text-white text-sm font-medium">Add to Cart</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
